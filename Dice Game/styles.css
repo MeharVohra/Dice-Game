@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  /* background-color: #393E46; */
+  background-image: url("images/dice.webp");
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #3AB0FF;
+}
+
+p {
+  font-size: 2rem;
+  color: #3AB0FF;
+  font-family: 'Indie Flower', cursive;
+}
+
+/* The images were not coming side to side, they were aligned below each other.
+To solve this, we used the display property and set it to inline-block
+This means that they will be placed side by side as long as they fit within the container.
+Now after this, the images were still not aligned side by side
+It could be because the container's width is set to 70% of the parent element 
+and the total width of the images is larger than 70%. 
+One solution is to try reducing the width of the images or increasing the width of the container.
+
+Another possible issue could be the margin or padding of the images,
+which may be pushing the images away from each other. 
+To resolve this, try removing any margin or padding from the images. */
+
+/* Now this issue got resolved but the images were far away from each other
+To bring them closer, we gave a margin of 50 px on both right and left sides of the images */
+img {
+
+  width: 30%;
+  display: inline-block;
+  margin: 0 50px;
+  padding: 0;
+}
+
